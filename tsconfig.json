@@ -3,17 +3,38 @@
     "target": "ESNext",
     "module": "ESNext",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "esModuleInterop": true,
     "skipLibCheck": true,
+
+    /* Distribution */
+    "rootDir": "src",
+    "outDir": "dist/",
+    "declaration": true,
+    "noEmitOnError": true,
+    "emitDeclarationOnly": false,
+    "esModuleInterop": true,
+    "noEmit": true,
     /* Bundler mode */
     "moduleResolution": "Bundler",
+    /* Bundler mode */
+    // "moduleResolution": "nodenext",
+    // "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
 
     /* others */
     "useDefineForClassFields": true,
     "lib": ["ESNext", "DOM"],
-    "resolveJsonModule": true,
     "baseUrl": ".",
+
+     /** Json modules **/
+    "resolveJsonModule": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
   },
   "include": ["src", "vite.config.ts"]
 }

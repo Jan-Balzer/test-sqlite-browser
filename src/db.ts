@@ -20,6 +20,7 @@ try {
 
   db.run('INSERT INTO users (name, email) VALUES (?, ?)', ['Alice', 'alice@example.com']);
   db.run('INSERT INTO users (name, email) VALUES (?, ?)', ['Bob', 'bob@example.com']);
+  db.run('INSERT INTO users (name, email) VALUES (?, ?)', ['Charlie', 'charlie@example.com']);
 
   return db;
 
