@@ -8,14 +8,14 @@ async function main() {
   if (output) {
     if (Array.isArray(users) && users.length > 0) {
       const table = document.createElement('table');
-      table.style.border = '1px solid black';
+      table.style.border = '1px solid blue';
       table.style.borderCollapse = 'collapse';
 
       const thead = document.createElement('thead');
       thead.style.backgroundColor = '#f2f2f2';
-      thead.style.borderBottom = '1px solid black';
+      thead.style.borderBottom = '1px solid blue';
       thead.style.textAlign = 'left';
-      thead.style.padding = '8px';
+      thead.style.padding = '100px 100px 200px 100px';
       thead.style.fontWeight = 'bold';
       const tbody = document.createElement('tbody');
 
@@ -25,6 +25,7 @@ async function main() {
       headers.forEach(header => {
         const th = document.createElement('th');
         th.textContent = header;
+        th.style.width = '30%'; // Make column 30% wide
         headerRow.appendChild(th);
       });
       thead.appendChild(headerRow);
