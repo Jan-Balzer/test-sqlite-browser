@@ -8,7 +8,7 @@ async function main() {
   if (output) {
     if (Array.isArray(users) && users.length > 0) {
       const table = document.createElement('table');
-      table.style.border = '1px solid blue';
+      table.style.border = '1px solid green';
       table.style.borderCollapse = 'collapse';
 
       const thead = document.createElement('thead');

@@ -1,6 +1,6 @@
 {
-  "name": "sqlite-browser-cdn",
-  "version": "1.0.0",
+  "name": "test-sqlite-browser",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

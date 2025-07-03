@@ -2,7 +2,7 @@
 export async function createDatabase(): Promise<any> {
 const initSqlJsModule = await import('sql.js');
 const SQL = await initSqlJsModule.default({
-  locateFile: file => `/sql-wasm.wasm` // assuming it's in public/
+  locateFile: _file => `/sql-wasm.wasm` // assuming it's in public/
 });
 
 
